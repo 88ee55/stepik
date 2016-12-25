@@ -9,3 +9,4 @@ mkdir public/js
 mkdir uploads
 mkdir etc
 cp ../stepik/nginx.conf etc/
+
