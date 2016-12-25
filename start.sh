@@ -10,7 +10,7 @@ mkdir public/js
 mkdir uploads
 mkdir etc
 cd ..
-cp stepik/nginx.conf etc/
+cp stepik/nginx.conf web/etc/
 sudo ln -s /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/my.conf
 sudo unlink /etc/nginx/sites-enabled/default
 cp stepik/hello.py web/
