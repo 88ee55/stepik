@@ -1,1 +1,3 @@
-django-admin startproject name_project
+
+#!/bin/bash
+django-admin startproject $1 #name_project
