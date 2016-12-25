@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Go"
+chmod a+x update.sh
 mkdir ../web/
 cd ../web/
 mkdir public
