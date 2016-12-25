@@ -11,6 +11,10 @@ mkdir uploads
 mkdir etc
 cd ..
 cp stepik/nginx.conf etc/
-cp stepik/hello.py web/
 sudo ln -s /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/my.conf
+sudu unlink /etc/nginx/sites-enabled/default
+cp stepik/hello.py web/
+cp stepik/hello.py.conf web/etc/hello.py
+sudo ln -s /home/box/web/etc/hello.py /etc/gunicorn.d/hello.py
+#sudo rm -rf /etc/gunicorn.d/
 
