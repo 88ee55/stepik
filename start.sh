@@ -10,4 +10,5 @@ mkdir public/js
 mkdir uploads
 mkdir etc
 cp ../stepik/nginx.conf etc/
+ln -s /home/box/web/etc /etc/nginx/sites-enabled/my.conf
 
