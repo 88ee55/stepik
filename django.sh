@@ -1,1 +1,1 @@
-django??? start?  name_project
+django-admin startproject name_project
