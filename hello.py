@@ -1,6 +1,10 @@
 #!/usr/bin/python
+#from wsgiref.simple_server import make_server
+#from cgi import parse_qs, escape
 def application(env, start_response):
-    start_response('200 OK', [('Content-Type','text/html')])
+    qs=environ['QUERY_STRING']
+    otvet=qs.replace("&",r"\r\n")
+    start_response('200 OK', [('Content-Type','text/plain')])
     #return [b"Hello World"] # python3
-    return ["Hello World"] # python2
+    return otvet # python2
     
